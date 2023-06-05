@@ -5,10 +5,10 @@ image:
   tag: ""
 
 service:
-  name: my_test_env_service
+  name: my-test-env-service
   port: 80
 
 deployment:
-  name: test_dep
+  name: test-dep
 
 namespace: test

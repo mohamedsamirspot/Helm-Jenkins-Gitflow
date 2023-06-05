@@ -5,10 +5,10 @@ image:
   tag: ""
 
 service:
-  name: my_release_env_service
+  name: my-release-env-service
   port: 80
 
 deployment:
-  name: release_dep
+  name: release-dep
 
 namespace: release

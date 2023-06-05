@@ -5,10 +5,10 @@ image:
   tag: ""
 
 service:
-  name: my_dev_env_service
+  name: my-dev-env-service
   port: 80
   
 deployment:
-  name: dev_dep
+  name: dev-dep
 
 namespace: dev
