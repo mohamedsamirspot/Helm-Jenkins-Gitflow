@@ -1,0 +1,14 @@
+metadata:
+  name: carrepair
+image:
+  repository: ""
+  tag: ""
+
+service:
+  name: my-release-env-service
+  port: 80
+
+deployment:
+  name: release-dep
+
+namespace: release

@@ -1,0 +1,14 @@
+metadata:
+  name: carrepair
+image:
+  repository: ""
+  tag: ""
+
+service:
+  name: my-dev-env-service
+  port: 80
+  
+deployment:
+  name: dev-dep
+
+namespace: dev
