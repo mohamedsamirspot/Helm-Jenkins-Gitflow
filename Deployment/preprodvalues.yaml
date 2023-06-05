@@ -1,0 +1,14 @@
+metadata:
+  name: carrepair
+image:
+  repository: ""
+  tag: ""
+
+service:
+  name: my_preprod_env_service
+  port: 80
+
+deployment:
+  name: preprod_dep
+
+namespace: preprod

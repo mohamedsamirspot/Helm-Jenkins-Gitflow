@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: myservice
+  name: {{ .Values.service.name }}
+  namespace: {{ .Values.namespace }}
+spec:
+  ports:
+  - name: carrepairport
+    port: {{ .Values.service.port }}
+    protocol: TCP
+    targetPort: {{ .Values.service.port }}
+  selector:
+    app: {{ .Values.metadata.name }}
+  type: NodePort
+status:
+  loadBalancer: {}
