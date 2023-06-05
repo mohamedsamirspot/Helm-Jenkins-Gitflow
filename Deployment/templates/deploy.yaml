@@ -1,0 +1,25 @@
+# deploy.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: {{ .Values.metadata.name }}
+  name: {{ .Values.deployment.name }}
+  namespace: {{ .Values.namespace }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Values.metadata.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.metadata.name }}
+    spec:
+      containers:
+      - image: {{ .Values.image.repository }}:v{{ .Values.image.tag }}
+        name: {{ .Values.metadata.name }}
+        imagePullPolicy: Always
+        ports:
+        - containerPort: {{ .Values.service.port }}
+        resources: {}
