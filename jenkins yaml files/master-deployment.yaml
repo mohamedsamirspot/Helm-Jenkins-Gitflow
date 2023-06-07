@@ -18,7 +18,7 @@ spec:
             runAsUser: 1000
       serviceAccountName: jenkins-admin
       containers:
-        - name: jenkins
+        - name: jenkins-master
           image: jenkins/jenkins:lts-jdk11
           resources:
             limits:
